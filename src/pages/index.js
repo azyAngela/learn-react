@@ -8,6 +8,11 @@ import Bios from './qcomps/bios'
 import TodoList from './qcomps/todos'
 import ProfilePros from './components/profile_props'
 import PackingList from './components/props_item'
+import List from './qcomps/list_keys_id'
+import RecipeList from './qcomps/recipes'
+import Gallery from './qcomps/state'
+import StuckForm from './qcomps/stuckForm'
+import FeedbackForm from './qcomps/thankYouCrash'
 
 export default function Home() {
   return (
@@ -18,7 +23,13 @@ export default function Home() {
         {/* <TodoList /> */}
         {/* <ProfilePros /> */}
         {/* <Gallery /> */}
-        <PackingList />
+        {/* <PackingList /> */}
+        {/* <List /> */}
+        {/* <RecipeList /> */}
+        {/* <Gallery /> */}
+        {/* <StuckForm /> */}
+        <FeedbackForm />
+
     </div>
   )
 }

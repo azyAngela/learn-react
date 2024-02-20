@@ -10,13 +10,16 @@ const initialList = [
 export default function BucketList() {
   const [myList, setMyList] = useState(initialList);
   const [yourList, setYourList] = useState(
-    initialList
+    initialList.map((i) => {
+      return { ...i}; // make a shallow copy of the object
+    })
   );
 
   function handleToggleMyList(artworkId, nextSeen) {
     const tmpList = myList.map(e => {
         if (e.id === artworkId) {
             e.seen = nextSeen
+            // Another solution: return { ...e, seen: nextSeen }; // make a shallow copy of the object
         }
         return e
     });

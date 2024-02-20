@@ -13,6 +13,11 @@ import RecipeList from './qcomps/recipes'
 import Gallery from './qcomps/state'
 import StuckForm from './qcomps/stuckForm'
 import FeedbackForm from './qcomps/thankYouCrash'
+import RequestTracker from './qcomps/shoppingCart'
+// import Form from './components/updObjects'
+import Form from './qcomps/updObjectsForm'
+import ArrayList from './qcomps/artistsRemoveArr'
+import BucketList from './qcomps/arrObj'
 
 export default function Home() {
   return (
@@ -28,7 +33,11 @@ export default function Home() {
         {/* <RecipeList /> */}
         {/* <Gallery /> */}
         {/* <StuckForm /> */}
-        <FeedbackForm />
+        {/* <FeedbackForm /> */}
+        {/* <RequestTracker /> */}
+        {/* <Form /> */}
+        {/* <ArrayList /> */}
+        <BucketList />
 
     </div>
   )
